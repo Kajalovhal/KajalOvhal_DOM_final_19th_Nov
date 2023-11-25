@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./Img/hotel-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation:slider 60s infinite linear;
+    overflow: hidden;
+}
+.logo{
+    width: 3vw;
+    transform: translate(2rem, -5rem);
+
+}
+.Hdlogo{
+    display: none;
+}
+nav{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-style: italic;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    font-size: large;
+    
+}
+a{
+    text-decoration: none;
+    color: red;
+    font-weight: 900;
+}
+.nav2{
+    display: flex;
+    gap: 2vw;
+}
+.nav2 div img{
+    padding: 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    transform: translate(0rem, -1rem);
+}
+.section{
+    display: flex;
+    
+}
+.right{
+   width: 40%;
+   align-items: center;
+   padding: 10vw;
+   color: white;
+   font-size: 1.4vw;
+   font-weight: bold;
+}
+.right h4 span{
+    font-style: italic;
+    margin-left: 6vw;
+    font-size: 2vw;
+    color: red;
+    font-weight: 1000;
+}
+.right h3{
+    letter-spacing: 0.2vw;
+    font-size: 2vw;
+    color: red;
+}
+.left{
+    width: 1000px;
+    height: 650px;
+    
+}
+@keyframes slider {
+    0%{background-image: url('./Img/hotel-1.jpg');}
+    
+    20%{background-image: url('./Img/hotel-2.jpg');}
+    
+    40%{background-image: url('./Img/Friends-Dining-Together-6-Ways-to-Enhance-Customer-Experience-in-Your-Restaurant.png');}
+    
+    60%{background-image: url('./Img/images\ \(2\).jpeg');}
+
+    80%{background-image: url('./Img/images\ \(3\).jpeg');}
+}
+
+
+@media screen and (max-width: 600px) {
+    nav{
+        display: none;
+    }
+    .Hdlogo{
+        display: block;
+        width: 0.5vw;
+        height: 0.5vw;
+    }
+    .section{
+        display: block;
+    }
+    .right{
+        text-align: center;
+        width: 89%;
+        font-size: large;
+        transform: translate(-1rem , 13rem);
+    }
+    .right h4{
+        font-size: 4vw;
+    }
+    .right h4 span{
+        font-size: 6vw;
+    }
+    .right h3{
+        font-size: 6vw;
+    }
+}
